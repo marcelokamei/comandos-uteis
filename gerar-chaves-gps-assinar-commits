@@ -1,0 +1,18 @@
+gpg --list-secret-keys --keyid-form LONG
+gpg --full-generate-key
+
+gpg --armor --export #colocar o id da chave gerada
+
+git config --global use.signingkey #colocar o id da chave gerada
+
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+
+#editar o arquivo ~/.bashrc e inserir:
+#export GPG_TTY=$(tty)
+
+#editar o arquivo ~/.gnupg/gpg.info
+#inserir/criar o arquivo acima com: use-agent
+
+gpgconf --lauch gpg-agent
+
