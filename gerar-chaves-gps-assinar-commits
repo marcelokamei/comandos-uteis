@@ -14,5 +14,5 @@ git config --global tag.gpgsign true
 #editar o arquivo ~/.gnupg/gpg.info
 #inserir/criar o arquivo acima com: use-agent
 
-gpgconf --lauch gpg-agent
+gpgconf --launch gpg-agent
 
